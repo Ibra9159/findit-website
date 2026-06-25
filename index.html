@@ -891,7 +891,7 @@ window.joinWaitlist = async function () {
       createdAt: serverTimestamp()
     });
 
-    const emailResponse = await fetch("/.netlify/functions/send-welcome", {
+    const emailResponse = await fetch("/send-welcome", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
